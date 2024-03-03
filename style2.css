@@ -1,0 +1,75 @@
+body {
+    color: #F4F4FB;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    counter-reset: my-count 5;
+    -webkit-animation: countdown 5s linear 1; 
+    animation: countdown 5s linear 1; 
+}
+
+body::after {
+    content: counter(my-count);
+    font-size: 30em;
+}
+
+@-webkit-keyframes countdown {
+    0% {
+        background: #FCE4EC;
+    }
+    20% {
+        counter-increment: my-count -1;
+        background: #FCE4EC;
+    }
+    40% {
+        counter-increment: my-count -2;
+        background: #FCE4EC;
+    }
+    60% {
+        counter-increment: my-count -3;
+        background: #FCE4EC;
+    }
+    80% {
+        counter-increment: my-count -4;
+        background: #FCE4EC;
+    }
+    100% {
+        counter-increment: my-count -5;
+        background: #FCE4EC;
+        opacity: 0; 
+        -webkit-animation-iteration-count: 1; 
+        animation-iteration-count: 1; 
+    }
+}
+
+@keyframes countdown {
+    0% {
+        background: #FCE4EC;
+    }
+    20% {
+        counter-increment: my-count -1;
+        background: #FCE4EC;
+    }
+    40% {
+        counter-increment: my-count -2;
+        background: #FCE4EC;
+    }
+    60% {
+        counter-increment: my-count -3;
+        background: #FCE4EC;
+    }
+    80% {
+        counter-increment: my-count -4;
+        background: #FCE4EC;
+    }
+    100% {
+        counter-increment: my-count -5;
+        background: #FCE4EC;
+        opacity: 0; 
+        animation-iteration-count: 1; 
+    }
+}
+
+
+
